@@ -1,0 +1,7 @@
+<%= form_for(:session, :html => {class: "form-horizontal", role: "form"}, url: login_path) do |f| %>
+  <%= f.label :username %>
+  <%= f.text_field :username, class: 'form-control', placeholder: 'Enter username' %>
+  <%= f.label :password %>
+  <%= f.password_field :password, class: 'form-control', autocomplete: "off", placeholder: 'Enter password' %>
+  <%= f.submit "Log in", class: 'btn btn-primary btn-lg pull-right' %>
+<% end %>
